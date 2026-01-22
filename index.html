@@ -21,16 +21,17 @@
 
 <body>
 
-    <!-- SOS/Alert Bar -->
+    <!-- SOS / Alert Bar -->
     <div id="sos-bar" class="sos-bar glass-panel">
         <div class="sos-content">
             <i class="ph ph-warning-circle sos-icon"></i>
             <span class="sos-message">ALERTA METEOROLÓGICO: Chuva intensa prevista para as 18h.</span>
         </div>
-        <button class="sos-close" aria-label="Fechar Alerta"><i class="ph ph-x"></i></button>
+        <button class="sos-close" aria-label="Fechar Alerta">
+            <i class="ph ph-x"></i>
+        </button>
     </div>
 
-    <!-- Main Container -->
     <main class="app-container">
 
         <!-- Header -->
@@ -42,63 +43,63 @@
             </div>
         </header>
 
-        <!-- City Pulse Section (Map) -->
+        <!-- Map Section -->
         <section class="lotação-da-cidade">
             <div class="section-header">
                 <h2>Lotação da Cidade</h2>
                 <span class="live-indicator"><span class="dot"></span> EM TEMPO REAL</span>
             </div>
 
-            <div class="map-container" id="map-container">
+            <div class="map-container">
                 <div class="map-bg">
-                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?q=41.4432765,-8.2933277&hl=pt-PT&z=17&output=embed">
+                    <iframe
+                        src="https://maps.google.com/maps?q=41.4432765,-8.2933277&hl=pt-PT&z=17&output=embed"
+                        width="100%" height="100%" frameborder="0" scrolling="no">
                     </iframe>
                 </div>
 
-                <a href="https://www.google.com/maps/@41.4432765,-8.2933277,16.75z?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-                    target="_blank" class="map-external-link glass-panel" aria-label="Abrir no Google Maps">
+                <a href="https://www.google.com/maps/@41.4432765,-8.2933277,16.75z"
+                    target="_blank"
+                    class="map-external-link glass-panel">
                     <i class="ph ph-arrow-square-out"></i> Ver Mapa Completo
                 </a>
             </div>
         </section>
 
-        <!-- Crowdsourcing Widget -->
+        <!-- Crowdsourcing -->
         <section class="crowdsource-widget glass-panel">
             <h3>Como está o ambiente agora?</h3>
             <div class="voting-buttons">
-                <button class="vote-btn vibe-calm" data-vibe="calm">
-                    <i class="ph ph-leaf btn-icon"></i>
-                    Calmo
+                <button class="vote-btn vibe-calm">
+                    <i class="ph ph-leaf btn-icon"></i> Calmo
                 </button>
-                <button class="vote-btn vibe-busy" data-vibe="busy">
-                    <i class="ph ph-users btn-icon"></i>
-                    Movimentado
+                <button class="vote-btn vibe-busy">
+                    <i class="ph ph-users btn-icon"></i> Movimentado
                 </button>
-                <button class="vote-btn vibe-intense" data-vibe="intense">
-                    <i class="ph ph-fire btn-icon"></i>
-                    Intenso
+                <button class="vote-btn vibe-intense">
+                    <i class="ph ph-fire btn-icon"></i> Intenso
                 </button>
             </div>
-            <p id="vote-feedback" class="vote-feedback hidden">Obrigado pela tua contribuição!</p>
+            <p id="vote-feedback" class="vote-feedback hidden">
+                Obrigado pela tua contribuição!
+            </p>
         </section>
 
         <!-- Info Grid -->
         <div class="info-grid">
 
-            <!-- Visual Zone Comparison -->
+            <!-- Visual Zones -->
             <section class="visual-zones-grid">
 
                 <!-- Party Zone -->
                 <article class="visual-card zone-party">
-                    
-                    <img 
-                        src="assets/giesta-amarela-reserva-natural-serra-malcata.jpg" 
+                    <img
+                        src="assets/giesta-amarela-reserva-natural-serra-malcata.jpg"
                         alt="Zona de festa"
-                        class="card-image"
-                    >
-                
+                        class="card-image">
+
                     <div class="overlay-gradient"></div>
+
                     <div class="content">
                         <span class="badge red">
                             <i class="ph ph-speaker-high"></i> Acontecendo Agora
@@ -113,10 +114,12 @@
 
                 <!-- Relax Zone -->
                 <article class="visual-card zone-relax"
-                    style="background-image: url('../../.gemini/antigravity/brain/76cf4c96-3cfd-4f49-ad89-b96962ed9aff/zone_relax_1768782078070.png');">
+                    style="background-image: url('assets/zone_relax.png');">
                     <div class="overlay-gradient"></div>
                     <div class="content">
-                        <span class="badge green"><i class="ph ph-tree"></i> Zona Zen</span>
+                        <span class="badge green">
+                            <i class="ph ph-tree"></i> Zona Zen
+                        </span>
                         <h4>Onde está mais calmo?</h4>
                         <div class="location-detail">
                             <span class="highlight-text">Parque da Cidade</span>
@@ -127,27 +130,31 @@
 
             </section>
 
-            <!-- Flora Local Card -->
-            <article class="card flora-card glass-panel" style="margin-top: 30px;">
+            <!-- Flora Card -->
+            <article class="card flora-card glass-panel">
                 <div class="flora-image">
-                    <img src="https://github.com/bernardocosta31/Projeto/blob/main/giesta-amarela-reserva-natural-serra-malcata.jpg"
-                        alt="Giesta"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img
+                        src="assets/giesta-amarela-reserva-natural-serra-malcata.jpg"
+                        alt="Giesta">
                 </div>
+
                 <div class="flora-content">
                     <h4><i class="ph ph-plant"></i> Flora Local</h4>
                     <h5 class="plant-name">Giesta</h5>
                     <p class="scientific-name">Genisteae</p>
+
                     <div class="flora-tags">
                         <span class="tag">Mediterrânico</span>
                         <span class="tag">Aromático</span>
                     </div>
-                    <p class="flora-desc">Excelente cobertura de solo, resistente à seca e atrai polinizadores urbanos.
+
+                    <p class="flora-desc">
+                        Excelente cobertura de solo, resistente à seca e atrai polinizadores urbanos.
                     </p>
                 </div>
             </article>
 
-            <!-- Urban Mobility Widget -->
+            <!-- Mobility -->
             <article class="card mobility-card glass-panel">
                 <h4><i class="ph ph-car"></i> Trânsito em Redor</h4>
                 <div class="traffic-light-container">
@@ -164,10 +171,9 @@
             </article>
 
         </div>
-
     </main>
 
-    <!-- Floating Action Button for Report -->
+    <!-- Floating Button -->
     <button class="fab-report" aria-label="Reportar Perigo">
         <i class="ph ph-warning-octagon"></i>
         <span>REPORTAR PERIGO</span>
@@ -179,8 +185,6 @@
 
     <script src="script.js"></script>
 </body>
-
-
 </html>
 
 
